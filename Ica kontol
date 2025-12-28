@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Info Pelaksanaan</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            overflow: hidden;
+        }
+
+        h2, p {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        h2 { animation-delay: 0.5s; }
+        .tgl { animation-delay: 1.5s; }
+        .jam { animation-delay: 2.5s; }
+        .tempat { animation-delay: 3.5s; }
+
+        a {
+            color: #ffd369;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Kupu-kupu */
+        .butterfly {
+            position: absolute;
+            font-size: 24px;
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            from {
+                transform: translate(-50px, 100vh);
+            }
+            to {
+                transform: translate(110vw, -100px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>✨ Detail Pelaksanaan ✨</h2>
+
+    <p class="tgl">
+        📅 <b>Tanggal:</b>
+        <a href="https://calendar.google.com" target="_blank">
+            100-3-4
+        </a>
+    </p>
+
+    <p class="jam">
+        ⏰ <b>Jam:</b>
+        <a href="https://time.is" target="_blank">
+            25 Jam
+        </a>
+    </p>
+
+    <p class="tempat">
+        📍 <b>Tempat:</b>
+        <a href="https://maps.google.com/?q=Ancient+Greece" target="_blank">
+            Yunani Kuno
+        </a>
+    </p>
+
+    <!-- Kupu-kupu -->
+    <div class="butterfly" style="left:10%; animation-delay:0s;">🦋</div>
+    <div class="butterfly" style="left:40%; animation-delay:3s;">🌸</div>
+    <div class="butterfly" style="left:70%; animation-delay:6s;">🦋</div>
+
+</body>
+</html>
